@@ -9,7 +9,7 @@ ENV SERVICE_CURATOR_LOGGING_LEVEL=INFO \
 RUN apt-get update -q && \
     apt-get install -qy cron && \
     apt-get clean -q && \
-    pip install elasticsearch-curator==5.2.0
+    pip install elasticsearch-curator==5.4.1
 
 RUN mkdir -p /scripts /config/actions
 
