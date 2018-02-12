@@ -18,5 +18,5 @@ client:
 logging:
   loglevel: ${SERVICE_CURATOR_LOGGING_LEVEL}
   logfile:
-  logformat: default
+  logformat: ${SERVICE_CURATOR_LOGGING_FORMAT}
   blacklist: ['elasticsearch', 'urllib3']
