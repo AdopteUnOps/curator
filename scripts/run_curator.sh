@@ -9,4 +9,4 @@ echo "Fetching curator custom actions"
 curl -sf ${RANCHER_BASEURL}/self/service/metadata/curator-actions > ${ACTION_FILE}
 
 echo "Executing curator"
-curator --config ${CONFIG_FILE} ${ACTION_FILE}
+/usr/local/bin/curator --config ${CONFIG_FILE} ${ACTION_FILE}
